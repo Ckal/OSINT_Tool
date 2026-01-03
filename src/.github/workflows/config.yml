@@ -1,0 +1,22 @@
+# config.yml
+
+huggingface:
+  # The Hugging Face Space repository ID (e.g., user/space-name)
+  huggingface_repo_id: "canstralian/your-huggingface-space"
+  
+  # Your Hugging Face username (to authenticate)
+  hf_username: "canstralian"
+
+  # Hugging Face API token, recommended to be kept in GitHub secrets
+  hf_token: "${{ secrets.HF_TOKEN }}"  # Replace this with your GitHub secrets for security
+  
+  # Specify the branch to sync with, optional (defaults to main)
+  github_branch: "main"
+
+  # Optional: If you have a specific path to the configuration file in your repository
+  yaml_header_path: "path/to/your/config-file.yaml"  # Optional: specify the YAML config file path
+
+  # Optional: specify additional Hugging Face Space sync options (e.g., version control, deployment details)
+  options:
+    deploy: true  # Set to true to trigger deployment after sync
+    force_sync: false  # Set to true if you need to force a sync even if no changes are detected

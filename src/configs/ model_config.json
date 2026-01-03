@@ -1,0 +1,6 @@
+{
+  "batch_size": 16,
+  "learning_rate": 2e-5,
+  "num_epochs": 3,
+  "model_name": "distilbert-base-uncased"
+}
